@@ -14,8 +14,17 @@ header {
     font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 2rem;
+}
+
+h2 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 2rem;
+    background-color:#F0F0DB;
 }
 
 #batch {
@@ -24,10 +33,11 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin: 1rem;
 }
 
 .person {
-    height: 450px;
+    height: 500px;
     min-width: 20%;
     max-width: 25%;
     text-align: center;
@@ -42,7 +52,7 @@ header {
 /* Dedicated image container */
 .image-wrapper {
     position: absolute;
-    bottom: 60px; /* right above the name */
+    bottom: 100px; /* right above the name */
     height: 420px; /* space for the image */
     width: 100%;
     overflow: hidden;
@@ -85,6 +95,16 @@ header {
     background-color: #0A5EB0;
 }
 
+.person a {
+    transition: all 200ms linear;
+    opacity: 0;
+    color: inherit;
+}
+
+.person:hover a {
+    opacity: 1;
+}
+
 .person:hover p {
     opacity: 1;
 }
@@ -92,4 +112,17 @@ header {
 .person:hover h3 {
     color: aliceblue;
     transform: scale(1.1);
+}
+
+#gallery {
+    margin: 1rem;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+#gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: auto;
 }
