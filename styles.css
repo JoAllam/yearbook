@@ -139,7 +139,7 @@ h2 {
     column-gap: 20px;
 }
 
-#gallery figure a img {
+#gallery figure a img, #gallery figure video {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
